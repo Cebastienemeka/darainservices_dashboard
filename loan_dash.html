@@ -67,8 +67,25 @@
             /* Divide the width equally among columns */
         }
 
-        .custom-space {
-            margin-left: 150%;
+        .card {
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-apply {
+            background-color: #FF9900;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-apply:hover {
+            background-color: #e68a00;
         }
     </style>
 
@@ -479,9 +496,8 @@
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex align-items-center text-gray-900 fw-bold my-0"
                                         style="font-size: 32px;">
-                                        Join Esusu Premiuim Group &nbsp;
-                                        <span class="mb-5"><i class="bi bi-info-circle"
-                                                style="font-size: 15px; color: #04A949; font-weight: bold;"></i></span>
+                                        Loan &nbsp;
+
                                     </h1>
 
                                     <!--end::Title-->
@@ -490,18 +506,13 @@
                                         <!--begin::Item-->
                                         <li class="breadcrumb-item text-muted">
                                             <a class="text-muted" style="font-size: 14px;">
-                                                Explore Esusu Premium plans tailored for your financial <br>
-                                                goals. Join a circle and start contributing today.
+                                                Choose the loan type that fits your needs. From micro-loans to SME <br>
+                                                loans, we’ve got you covered with flexible repayment options.
                                             </a>
                                         </li>
                                     </ul>
-                                    <br>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center gap-xxl-5 fs-6 fw-semibold text-gray-500">
-                                        <a href="#" class="btn btn-warning" style="background-color: #FF8801;">
-                                            Explore Available Plans
-                                        </a>
-                                    </div>
+
+
                                     <!--end::Breadcrumb-->
                                 </div>
                                 <!--end::Actions-->
@@ -511,115 +522,18 @@
                         <!--end::Toolbar-->
                         <!--begin::Content-->
 
-
                         <div class="card mb-5 mb-xl-10">
 
                             <div class="card-header card-header-stretch pb-0">
                                 <div class="card-toolbar m-0"></div>
                             </div>
-
                             <!--end::Card header-->
                             <!--begin::Tab content-->
                             <div id="kt_billing_payment_tab_content" class="card-body tab-content">
-                                <h4 class="" style="font-size: 20px; color: #2E2E2E;">Available Plans to Join</h4>
-
                                 <!--begin::Tab panel-->
                                 <div id="kt_billing_creditcard" class="tab-pane fade show active" role="tabpanel">
 
-                                    <div class="row g-5 gx-xl-10 mb-5 mb-xl-10">
-                                        <!--begin::Col-->
-                                        <!--end::Col-->
-                                        <!--begin::Col-->
-                                        <div class="row g-5 g-xl-8">
-                                            <!-- First Card -->
-                                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                                <div class="card bgi-no-repeat bgi-position-y-top bgi-position-x-end statistics-widget-1 card-xl-stretch mb-xl-8"
-                                                    style="height: 150px; border: 0.2px solid #666666;">
-                                                    <div class="card-body">
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <p class="text-gray-900-75 fw-semibold m-0"
-                                                                style="color: #2E2E2E; font-size: 28px;">
-                                                                03
-                                                            </p>
-                                                            <i class="bi bi-arrow-up-right text-muted fs-4 fw-bold"
-                                                                style="transform: rotate(360deg); color: #2E2E2E !important;">
-                                                            </i>
-                                                        </div>
-                                                        <div class="fw-bold text-primary my-6"></div>
-                                                        <a href="#" class="card-title text-muted fw-400"
-                                                            style="color: #666666; font-size: 14px;">
-                                                            Active Groups
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Second Card -->
-                                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                                <div class="card bgi-no-repeat bgi-position-y-top bgi-position-x-end statistics-widget-1 card-xl-stretch mb-xl-8"
-                                                    style="height: 150px; border: 0.2px solid #666666;">
-                                                    <div class="card-body">
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <a href="#" class="card-title text-muted fw-400"
-                                                                style="color: #666666; font-size: 14px;">
-                                                                Pending contributions
-                                                            </a>
-                                                            <i class="bi bi-arrow-up-right text-muted fs-4 fw-bold"
-                                                                style="transform: rotate(360deg); color: #2E2E2E !important;">
-                                                            </i>
-                                                        </div>
-                                                        <div class="fw-bold text-primary my-6"></div>
-
-                                                        <p class="text-gray-900-75 fw-semibold m-0"
-                                                            style="color: #2E2E2E; font-size: 28px;">
-                                                            &#8358;40,000
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Third Card -->
-                                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                                <div class="card bgi-no-repeat bgi-position-y-top bgi-position-x-end statistics-widget-1 card-xl-stretch mb-xl-8"
-                                                    style="height: 150px; border: 0.2px solid #666666;">
-                                                    <div class="card-body">
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <a href="#" class="card-title text-muted fw-400"
-                                                                style="color: #666666; font-size: 14px;">
-                                                                Next Payout Date
-                                                            </a>
-                                                            <i class="bi bi-arrow-up-right text-muted fs-4 fw-bold"
-                                                                style="transform: rotate(360deg); color: #2E2E2E !important;">
-                                                            </i>
-                                                        </div>
-                                                        <div class="fw-bold text-primary my-6"></div>
-
-                                                        <p class="text-gray-900-75 fw-semibold m-0"
-                                                            style="color: #2E2E2E; font-size: 28px;">
-                                                            Dec 30, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-
-                                    <div class="w-100 d-flex justify-content-between align-items-center">
-                                        <h4 style="font-size: 20px; color: #2E2E2E;">My Active Plans</h4>
-                                        <span style="font-size: 20px; color: #FF8801;"><a href=""
-                                                style="font-size: 20px; color: #FF8801;">View All</a></span>
-                                    </div>
-
-
-                                    <div class="row gx-9 gy-6 d-flex">
+                                    <div class="row gx-9 gy-6 flex-column">
                                         <!--begin::Col-->
                                         <div class="col-xl-6" data-kt-billing-element="card">
                                             <!--begin::Card-->
@@ -630,382 +544,202 @@
                                                     <div class="d-flex align-items-center">
 
                                                         <div>
-                                                            <div class="container-fluid py-2">
-                                                                <div class="row">
-                                                                    <div
-                                                                        class="col-12 d-flex justify-content-between align-items-center">
-                                                                        <h4 class="mb-0"
-                                                                            style="font-size: 20px; color: #2E2E2E;">
-                                                                            Daily</h4>
-                                                                        <span
-                                                                            style="font-size: 16px; color: #04A949; ">Active</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center gap-xxl-5 fs-6 fw-semibold text-gray-500">
+                                                                <span>Active Loan</span>
 
+                                                            </div>
+                                                            <div class="fw-900 d-flex align-items-center gap-5"
+                                                                style="font-size: 32px; color: #2E2E2E;">
+                                                                &#8358;20,000
+                                                            </div>
                                                             <br>
-                                                            <div class="flex-column" style="width: 100%;">
+                                                            <div class="d-flex w-100 justify-content-evenly">
                                                                 <div class="flex-column">
-                                                                    <!-- Members -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Members:</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">10</span>
+                                                                    <div class="fs-6 fw-semibold text-gray-500"
+                                                                        style="font-size: 12px;">
+                                                                        Loan Type
                                                                     </div>
-
-                                                                    <!-- Contribution Amount -->
-                                                                    <div
-                                                                        class="d-flex justify-content-between w-100 fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-60">Contribution
-                                                                            Amount:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                                            &nbsp; &nbsp;
-                                                                            &nbsp;</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">₦20,000
-                                                                            Weekly</span>
+                                                                    <div class=""
+                                                                        style="font-size: 16px; color: #2E2E2E; white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;">
+                                                                        <br> <br>
+                                                                        Micro Loan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp;
                                                                     </div>
-
-                                                                    <!-- Next Contribution Date -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Next
-                                                                            Contribution Date:</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">Dec
-                                                                            20, 2024</span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Current Cycle:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">20/30
-                                                                            Days
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Total
-                                                                            Current Cycle:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">12
-                                                                            Weekly
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Defaulted Fine:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">
-                                                                            -
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div
-                                                                        class="d-flex flex-wrap align-items-center fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Referred link:
-                                                                        </span>
-                                                                        <span
-                                                                            class="flex-grow-1 text-end d-flex justify-content-end align-items-center"
-                                                                            style="color: #2E2E2E; font-size: 12px;">
-                                                                            <span class="me-2 text-truncate copy-text"
-                                                                                style="max-width: 75%; overflow: hidden;">
-                                                                                www.referral-link.com
-                                                                            </span>
-                                                                            <button
-                                                                                class="btn btn-sm btn-light copy-btn"
-                                                                                title="Copy Link">
-                                                                                <i class="fas fa-copy"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>
-
-
-
-
-
-
                                                                 </div>
-                                                            </div>
 
+                                                                <div class="flex-column">
+                                                                    <div class="fs-6 fw-semibold text-gray-500"
+                                                                        style="font-size: 12px;">
+                                                                        Repayment Remaining &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp;
+                                                                    </div>
+                                                                    <div class=""
+                                                                        style="font-size: 16px; color: #2E2E2E;"> <br>
+                                                                        &#8358;15,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                                                                </div>
+
+                                                                <div class="flex-column">
+                                                                    <div class="fs-6 fw-semibold text-gray-500"
+                                                                        style="font-size: 12px;">
+                                                                        Next Payment Due &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp;
+                                                                    </div>
+                                                                    <div class=""
+                                                                        style="font-size: 16px; color: #2E2E2E;"> <br>
+                                                                        &#8358;500 on Dec30, 2024 &nbsp; &nbsp; &nbsp;
+                                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+                                                                </div>
+
+
+
+                                                            </div>
                                                         </div>
                                                         <!--end::Details-->
-
                                                     </div>
 
                                                     <!--end::Wrapper-->
-
-
                                                 </div>
 
 
                                             </div>
                                             <!--end::Card-->
-
-
                                         </div>
-
-                                        <div class="col-xl-6" data-kt-billing-element="card">
-                                            <!--begin::Card-->
-                                            <div class="card card-dashed h-xl-100 flex-row flex-stack flex-wrap p-6">
-                                                <!--begin::Info-->
-                                                <div class="d-flex flex-column py-2">
-
-                                                    <div class="d-flex align-items-center">
-
-                                                        <div>
-                                                            <div class="container-fluid py-2">
-                                                                <div class="row">
-                                                                    <div
-                                                                        class="col-12 d-flex justify-content-between align-items-center">
-                                                                        <h4 class="mb-0"
-                                                                            style="font-size: 20px; color: #2E2E2E;">
-                                                                            Weekly</h4>
-                                                                        <span
-                                                                            style="font-size: 16px; color: #04A949; ">Active</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <br>
-                                                            <div class="flex-column" style="width: 100%;">
-                                                                <div class="flex-column">
-                                                                    <!-- Members -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Members:</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">10</span>
-                                                                    </div>
-
-                                                                    <!-- Contribution Amount -->
-                                                                    <div
-                                                                        class="d-flex justify-content-between w-100 fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-60">Contribution
-                                                                            Amount:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                                            &nbsp; &nbsp;
-                                                                            &nbsp;</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">₦20,000
-                                                                            Weekly</span>
-                                                                    </div>
-
-                                                                    <!-- Next Contribution Date -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Next
-                                                                            Contribution Date:</span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">Dec
-                                                                            20, 2024</span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Current Cycle:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">20/30
-                                                                            Days
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">Total
-                                                                            Current Cycle:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">12
-                                                                            Weekly
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div class="d-flex fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Defaulted Fine:
-                                                                        </span>
-                                                                        <span class="flex-grow-1 text-end"
-                                                                            style="color: #2E2E2E; font-size: 12px;">
-                                                                            -
-                                                                        </span>
-                                                                    </div>
-
-                                                                    <!-- Total Cycle Duration -->
-                                                                    <div
-                                                                        class="d-flex flex-wrap align-items-center fs-6 fw-semibold text-gray-500">
-                                                                        <span class="flex-shrink-0 w-40">
-                                                                            Referred link:
-                                                                        </span>
-                                                                        <span
-                                                                            class="flex-grow-1 text-end d-flex justify-content-end align-items-center"
-                                                                            style="color: #2E2E2E; font-size: 12px;">
-                                                                            <span class="me-2 text-truncate copy-text"
-                                                                                style="max-width: 75%; overflow: hidden;">
-                                                                                www.referral-link.com
-                                                                            </span>
-                                                                            <button
-                                                                                class="btn btn-sm btn-light copy-btn"
-                                                                                title="Copy Link">
-                                                                                <i class="fas fa-copy"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>
-
-
-
-
-
-
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!--end::Details-->
-
-                                                    </div>
-
-                                                    <!--end::Wrapper-->
-
-
-                                                </div>
-
-
-                                            </div>
-                                            <!--end::Card-->
-
-
-                                        </div>
-
-
-
-
-
-
-
                                     </div>
-
+                                    <!--end::Row-->
                                 </div>
-                                <!--end::Row-->
+                                <!--end::Tab panel-->
+                                <!--begin::Tab panel-->
                             </div>
-                            <!--end::Tab panel-->
-                            <!--begin::Tab panel-->
-
-                        </div>
-                        <!--end::Tab content-->
-                    </div>
-
-                </div>
-
-
-                <!--Confirmation Modal-->
-
-                <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="successModalLabel">Confirmation</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <!-- Modal Body -->
-                            <div class="modal-body text-center">
-                                <div class="success-icon">
-                                    <i class="bi bi-exclamation-circle-fill"
-                                        style="color: #6AFFA8; font-size: 32px;"></i>
-                                    <!-- Bootstrap Icon -->
-                                </div>
-                                <p class="mt-3" style="color: #2E2E2E; font-size: 28px;">Confirm Your Join Request!
-                                </p>
-                                <p class="mt-3" style="color: #666666; font-size: 16px;">You're about to join the
-                                    Weekly group. By proceeding, <br>
-                                    you agree to contribute ₦20,000 weekly for 12 weeks <br>
-                                    and abide by the group’s terms.
-                                </p>
-                            </div>
-                            <!-- Modal Footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn"
-                                    style="background-color: #FF8801; color: #fff;">Confirm</button>
-                            </div>
+                            <!--end::Tab content-->
                         </div>
                     </div>
+                    <!--end::Footer-->
                 </div>
-
-
-
-                <!--end::Footer-->
+                <!--end:::Main--> <br> <br>
+                <div class="container my-5">
+                    <h2 class="mb-5" style="color: #2E2E2E;">Loan Options</h2>
+                    <div class="row g-4">
+                        <!-- Micro Loan -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #2E2E2E;">MICRO LOAN</h5>
+                                    <p class="card-text" style="color: #666666;">
+                                        Pay upfront and receive your loan in 4 days. Daily repayment starts the next day
+                                        for 30 days.
+                                    </p>
+                                    <h6 style="color: #2E2E2E;">Key Details:</h6>
+                                    <ul>
+                                        <li style="color: #2E2E2E;">Amount: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #666666;">₦5,000–₦50,000</span></li>
+                                        <li style="color: #2E2E2E;">Interest: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #666666;">10% fixed</span></li>
+                                        <li>Repayment: &nbsp; &nbsp; <span style="color: #666666;">Daily (Excluding Sundays)</span></li>
+                                    </ul>
+                                    <button class="btn btn-apply w-100">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ROSCA Loan -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #2E2E2E;">ROSCA LOAN</h5>
+                                    <p class="card-text" style="color: #666666;">
+                                        Pay upfront and receive your loan in 4 days. Daily repayment starts the next day
+                                        for 30 days.
+                                    </p>
+                                    <h6 style="color: #2E2E2E;">Key Details:</h6>
+                                    <ul>
+                                        <li style="color: #2E2E2E;">Amount: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #666666;">₦5,000–₦50,000</span></li>
+                                        <li style="color: #2E2E2E;">Interest: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #666666;">10% fixed</span></li>
+                                        <li>Repayment: &nbsp; &nbsp; <span style="color: #666666;">Daily (Excluding Sundays)</span></li>
+                                    </ul>
+                                    <button class="btn btn-apply w-100">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SME Loan -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #2E2E2E;">SME LOAN</h5>
+                                    <p class="card-text" style="color: #666666;">
+                                        Pay upfront and receive your loan in 4 days. Daily repayment starts the next day
+                                        for 30 days.
+                                    </p>
+                                    <h6 style="color: #2E2E2E;">Key Details:</h6>
+                                    <ul>
+                                        <li style="color: #2E2E2E;">Amount: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #666666;">₦5,000–₦50,000</span></li>
+                                        <li style="color: #2E2E2E;">Interest: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #666666;">10% fixed</span></li>
+                                        <li>Repayment: &nbsp; &nbsp; <span style="color: #666666;">Daily (Excluding Sundays)</span></li>
+                                    </ul>
+                                    <button class="btn btn-apply w-100">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--end:::Main-->
+            <!--end::Wrapper-->           
+        </div>
+        <!--end::Page-->
+    </div>
 
 
-            <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
-                <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-                    <!--begin::Content wrapper-->
-                    <div class="d-flex flex-column flex-column-fluid">
-                        <!--begin::Toolbar-->
-                        <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
-                            <!--begin::Toolbar container-->
-                            <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
-                                <!--begin::Page title-->
-                                <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
-                                    <!--begin::Title-->
-                                    <h1
-                                        class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0">
-                                        Esusu Transaction History
-                                    </h1>
-                                    <!--end::Title-->
-                                    <!--begin::Breadcrumb-->
+    <!--end::App-->
+    <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+        <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+            <!--begin::Content wrapper-->
+            <div class="d-flex flex-column flex-column-fluid">
+                <!--begin::Toolbar-->
+                <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+                    <!--begin::Toolbar container-->
+                    <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
+                        <!--begin::Page title-->
+                        <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+                            <!--begin::Title-->
+                            <h1
+                                class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0">
+                                Loan History
+                            </h1>
+                            <!--end::Title-->
+                            <!--begin::Breadcrumb-->
 
-                                    <div class="d-flex align-items-center gap-2 gap-lg-3">
-                                        <button id="removeColumnBtn" class="btn btn-light-primary">Remove
-                                            Column</button>
-                                    </div>
-
-                                </div>
-                                <!--end::Page title-->
-                                <!--begin::Actions-->
-                                <div class="d-flex align-items-center gap-2 gap-lg-3">
-                                    <!--begin::Filter menu-->
-                                    <div class="m-0">
-                                        <!--begin::Menu toggle-->
-
-                                        <!--end::Menu toggle-->
-                                        <!--begin::Menu 1-->
-
-                                        <!--end::Menu 1-->
-                                    </div>
-
-                                </div>
-                                <!--end::Actions-->
-                            </div>
-                            <!--end::Toolbar container-->
                         </div>
-                        <!--end::Toolbar-->
+                        <!--end::Page title-->
+                        <!--begin::Actions-->
+                        <div class="d-flex align-items-center gap-2 gap-lg-3">
+                            <!--begin::Filter menu-->
+                            <div class="m-0">
+                                <!--begin::Menu toggle-->
 
-                        <!--begin::Content-->
-                        <div id="kt_app_content" class="app-content flex-column-fluid">
-                            <!--begin::Content container-->
-                            <div id="kt_app_content_container" class="app-container container-xxl">
-                                <!--begin::Products-->
-                                <div class="card card-flush">
-                                    <!--begin::Card header-->
-                                    <div class="card-header align-items-center py-5 gap-2 gap-md-5">
-                                        <!--begin::Card title-->
-                                        <!-- <div class="card-title">
+                                <!--end::Menu toggle-->
+                                <!--begin::Menu 1-->
+
+                                <!--end::Menu 1-->
+                            </div>
+
+                        </div>
+                        <!--end::Actions-->
+                    </div>
+                    <!--end::Toolbar container-->
+                </div>
+                <!--end::Toolbar-->
+
+                <!--begin::Content-->
+                <div id="kt_app_content" class="app-content flex-column-fluid">
+                    <!--begin::Content container-->
+                    <div id="kt_app_content_container" class="app-container container-xxl">
+                        <!--begin::Products-->
+                        <div class="card card-flush">
+                            <!--begin::Card header-->
+                            <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                <!--begin::Card title-->
+                                <!-- <div class="card-title">
                                    
                                     <div class="d-flex align-items-center position-relative my-1">
                                         <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-4">
@@ -1019,7 +753,7 @@
                                    
                                 </div> -->
 
-                                        <!-- <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                <!-- <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
                                     <div class="w-100 mw-150px">
                                        
                                         <select class="form-select form-select-solid" data-control="select2"
@@ -1037,179 +771,65 @@
                                     </div>
                                     
                                 </div> -->
-                                        <!--end::Card toolbar-->
-                                    </div>
-                                </div>
-                                <!--end::Card header-->
-                                <!--begin::Card body-->
-                                <div class="card-body pt-0">
-                                    <!--begin::Table-->
-                                    <table class="table align-middle table-row-dashed fs-6 gy-5"
-                                        id="kt_ecommerce_products_table" style="font-family: lato;">
-                                        <thead>
-                                            <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-                                                <th class="w-10px pe-2">
-                                                    <!-- <div
+                                <!--end::Card toolbar-->
+                            </div>
+                        </div>
+                        <!--end::Card header-->
+                        <!--begin::Card body-->
+                        <div class="card-body pt-0">
+                            <!--begin::Table-->
+                            <table class="table align-middle table-row-dashed fs-6 gy-5"
+                                id="kt_ecommerce_products_table" style="font-family: lato;">
+                                <thead>
+                                    <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+                                        <th class="w-10px pe-2">
+                                            <!-- <div
                                                 class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                                 <input class="form-check-input" type="checkbox" data-kt-check="true"
                                                     data-kt-check-target="#kt_ecommerce_products_table .form-check-input"
                                                     value="1" />
                                             </div> -->
-                                                </th>
-                                                <th class="text-start min-w-60px" style="color: #FF8801;">S/N</th>
-                                                <th class="text-start min-w-100px" style="color: #FF8801;">Date</th>
-                                                <th class="text-start min-w-60px" style="color: #FF8801;">Amount Paid
-                                                </th>
-                                                <th class="text-start min-w-60px" style="color: #FF8801;">Cycle day</th>
-                                                <th class="text-start min-w-100px" style="color: #FF8801;">Saved Amount
-                                                </th>
-                                                <th class="text-start min-w-100px" style="color: #FF8801;">Status</th>
-                                                <th class="text-start min-w-100px" style="color: #FF8801;">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="fw-semibold text-gray-600">
+                                        </th>
+                                        <th class="text-start min-w-60px" style="color: #FF8801;">S/N</th>
+                                        <th class="text-start min-w-100px" style="color: #FF8801;">Due Date</th>
+                                        <th class="text-start min-w-60px" style="color: #FF8801;">Amount Due</th>
+                                        <th class="text-start min-w-60px" style="color: #FF8801;">Target Amount</th>
+                                        <th class="text-start min-w-100px" style="color: #FF8801;">Saved Amount</th>
+                                        <th class="text-start min-w-100px" style="color: #FF8801;">Status</th>
+                                        <th class="text-start min-w-100px" style="color: #FF8801;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="fw-semibold text-gray-600">
 
-                                            <tr>
-                                                <td>
-                                                    <div
-                                                        class="form-check form-check-sm form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="checkbox" value="1" />
-                                                    </div>
-                                                </td>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                <input class="form-check-input" type="checkbox" value="1" />
+                                            </div>
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    1
-                                                </td>
+                                        <td class="text-start pe-0">
+                                            1
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    House Rent
-                                                </td>
+                                        <td class="text-start pe-0">
+                                            House Rent
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    Weekly Savings
-                                                </td>
+                                        <td class="text-start pe-0">
+                                            Weekly Savings
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    &#8358;300,000
-                                                </td>
+                                        <td class="text-start pe-0">
+                                            &#8358;300,000
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    &#8358;50,000
-                                                </td>
+                                        <td class="text-start pe-0">
+                                            &#8358;50,000
+                                        </td>
 
-                                                <td class="text-start pe-0">
-                                                    <div class="badge badge-light-primary">16&#37; </div>
-                                </div>
-                                </td>
-
-
-
-                                <td class="text-end">
-                                    <a href="#"
-                                        class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
-                                        data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
-                                        <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
-                                    <!--begin::Menu-->
-                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                        data-kt-menu="true">
-                                        <!--begin::Menu item-->
-                                        <div class="menu-item px-3">
-                                            <a href="" class="menu-link px-3">List</a>
-                                        </div>
-                                        <div class="menu-item px-3">
-                                            <a href="" class="menu-link px-3">Edit</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Menu item-->
-                                </td>
-
-
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                            <input class="form-check-input" type="checkbox" value="1" />
-                                        </div>
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        2
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        House Rent
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        Yearly Savings
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        &#8358;300,000
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        &#8358;50,000
-                                    </td>
-
-                                    <td class="text-start pe-0">
-                                        <div class="badge badge-light-primary">16&#37; </div>
-                            </div>
-                            </td>
-
-
-
-                            <td class="text-end">
-                                <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
-                                    data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
-                                    <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
-                                <!--begin::Menu-->
-                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                    data-kt-menu="true">
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-3">
-                                        <a href="" class="menu-link px-3">List</a>
-                                    </div>
-                                    <div class="menu-item px-3">
-                                        <a href="" class="menu-link px-3">Edit</a>
-                                    </div>
-                                </div>
-                                <!--end::Menu item-->
-                            </td>
-
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                        <input class="form-check-input" type="checkbox" value="1" />
-                                    </div>
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    3
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    Shop Rent
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    Daily Savings
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    &#8358;300,000
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    &#8358;50,000
-                                </td>
-
-                                <td class="text-start pe-0">
-                                    <div class="badge badge-light-primary">16&#37; </div>
+                                        <td class="text-start pe-0">
+                                            <div class="badge badge-light-primary">16&#37; </div>
                         </div>
                         </td>
 
@@ -1244,15 +864,15 @@
                             </td>
 
                             <td class="text-start pe-0">
-                                4
+                                2
                             </td>
 
                             <td class="text-start pe-0">
-                                Weekly Rent
+                                House Rent
                             </td>
 
                             <td class="text-start pe-0">
-                                Daily Savings
+                                Yearly Savings
                             </td>
 
                             <td class="text-start pe-0">
@@ -1299,11 +919,11 @@
                         </td>
 
                         <td class="text-start pe-0">
-                            5
+                            3
                         </td>
 
                         <td class="text-start pe-0">
-                            House Rent
+                            Shop Rent
                         </td>
 
                         <td class="text-start pe-0">
@@ -1345,20 +965,122 @@
 
 
                 </tr>
-                </tbody>
-                </table>
-                <!--end::Table-->
 
-                <div id="paginationContainer" class="pagination-container mt-4"></div>
+                <tr>
+                    <td>
+                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                            <input class="form-check-input" type="checkbox" value="1" />
+                        </div>
+                    </td>
+
+                    <td class="text-start pe-0">
+                        4
+                    </td>
+
+                    <td class="text-start pe-0">
+                        Weekly Rent
+                    </td>
+
+                    <td class="text-start pe-0">
+                        Daily Savings
+                    </td>
+
+                    <td class="text-start pe-0">
+                        &#8358;300,000
+                    </td>
+
+                    <td class="text-start pe-0">
+                        &#8358;50,000
+                    </td>
+
+                    <td class="text-start pe-0">
+                        <div class="badge badge-light-primary">16&#37; </div>
             </div>
-            <!--end::Card body-->
-        </div>
-        <!--end::Wrapper-->
-    </div>
-    <!--end::Page-->
-    </div>
-    <!--end::App-->
+            </td>
 
+
+
+            <td class="text-end">
+                <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                    data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                    <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+                <!--begin::Menu-->
+                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                    data-kt-menu="true">
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3">
+                        <a href="" class="menu-link px-3">List</a>
+                    </div>
+                    <div class="menu-item px-3">
+                        <a href="" class="menu-link px-3">Edit</a>
+                    </div>
+                </div>
+                <!--end::Menu item-->
+            </td>
+
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-check form-check-sm form-check-custom form-check-solid">
+                        <input class="form-check-input" type="checkbox" value="1" />
+                    </div>
+                </td>
+
+                <td class="text-start pe-0">
+                    5
+                </td>
+
+                <td class="text-start pe-0">
+                    House Rent
+                </td>
+
+                <td class="text-start pe-0">
+                    Daily Savings
+                </td>
+
+                <td class="text-start pe-0">
+                    &#8358;300,000
+                </td>
+
+                <td class="text-start pe-0">
+                    &#8358;50,000
+                </td>
+
+                <td class="text-start pe-0">
+                    <div class="badge badge-light-primary">16&#37; </div>
+        </div>
+        </td>
+
+
+
+        <td class="text-end">
+            <a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary"
+                data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+            <!--begin::Menu-->
+            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                data-kt-menu="true">
+                <!--begin::Menu item-->
+                <div class="menu-item px-3">
+                    <a href="" class="menu-link px-3">List</a>
+                </div>
+                <div class="menu-item px-3">
+                    <a href="" class="menu-link px-3">Edit</a>
+                </div>
+            </div>
+            <!--end::Menu item-->
+        </td>
+
+
+        </tr>
+        </tbody>
+        </table>
+        <!--end::Table-->
+
+        <div id="paginationContainer" class="pagination-container mt-4"></div>
+    </div>
     <!--end::Card body-->
     </div>
     <!--end::Products-->
@@ -1392,57 +1114,6 @@
 
                 // Add active state to the clicked menu item
                 this.parentElement.classList.add('active');
-            });
-        });
-
-    </script>
-
-    <script>
-        document.getElementById('removeColumnBtn').addEventListener('click', function () {
-            const columnToRemoveIndex = prompt("Enter column number to remove (starting from 1):");
-
-            if (columnToRemoveIndex) {
-                const table = document.getElementById('kt_ecommerce_products_table');
-                const colIndex = parseInt(columnToRemoveIndex) - 1;
-
-                if (!isNaN(colIndex)) {
-                    // Remove the header cell
-                    const headers = table.querySelectorAll('thead th');
-                    if (colIndex >= 0 && colIndex < headers.length) {
-                        headers[colIndex].remove();
-
-                        // Remove the corresponding cells in each row
-                        const rows = table.querySelectorAll('tbody tr');
-                        rows.forEach(row => {
-                            const cells = row.querySelectorAll('td');
-                            if (colIndex < cells.length) {
-                                cells[colIndex].remove();
-                            }
-                        });
-                    } else {
-                        alert("Invalid column index.");
-                    }
-                } else {
-                    alert("Please enter a valid column number.");
-                }
-            }
-        });
-    </script>
-
-    <!-- For copying Links -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const copyButtons = document.querySelectorAll('.copy-btn');
-
-            copyButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const textToCopy = button.previousElementSibling.textContent.trim();
-                    navigator.clipboard.writeText(textToCopy).then(() => {
-                        alert(`Copied: ${textToCopy}`);
-                    }).catch(err => {
-                        alert(`Failed to copy: ${err}`);
-                    });
-                });
             });
         });
 
