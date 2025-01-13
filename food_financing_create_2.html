@@ -30,70 +30,38 @@
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css">
     <!--end::Global Stylesheets Bundle-->
-
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
-    <!-- Select2 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css">
-
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <style>
-        .profile-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-            position: relative;
+        /* Hover effect for menu links */
+        .menu-link:hover {
+            color: white !important;
+            /* Ensure text stays visible */
+            background-color: #FF8801 !important;
+            /* Orange hover effect */
+            border-radius: 0.375rem;
+            /* Optional: Rounded corners */
         }
 
-        .profile-header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+        /* Active state styles */
+        .menu-item.menu-accordion.active>.menu-link {
+            color: white !important;
+            background-color: #FF8801 !important;
+            border-radius: 0.375rem;
+            /* Optional: Rounded corners */
         }
 
-        .profile-header h5 {
-            margin: 0;
+        #kt_ecommerce_products_table_wrapper {
+            width: auto !important;
         }
 
-        .status-dot {
-            width: 15px;
-            height: 15px;
-            background-color: #28a745;
-            border: 2px solid white;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 5px;
-            left: 65px;
-        }
-
-        /* .edit-link {
-            text-align: center;
-        } */
-
-        .edit-link {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50%;
-        }
-
-        .edit-link a {
-            color: #FF9800;
-            text-decoration: none;
-        }
-
-        .info-section {
-            margin-bottom: 30px;
-        }
-
-        .info-section h6 {
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .form-control {
-            width: 50%;
+        /* Set the number of rows and columns */
+        #kt_ecommerce_products_table thead th,
+        #kt_ecommerce_products_table tbody td {
+            width: calc(100% / var(--num-columns));
+            /* Divide the width equally among columns */
         }
     </style>
 
@@ -494,7 +462,12 @@
 
                     <!--begin::Content wrapper-->
                     <div class="d-flex flex-column flex-column-fluid"> <br> <br>
-
+                        <div class="fs-6 fw-semibold text-gray-500 ms-5">Financing &nbsp;
+                            <span><i class="fas fa-arrow-right"></i>
+                            </span> &nbsp; <span>Food Financing</span>
+                            <span><i class="fas fa-arrow-right"></i>
+                            </span> &nbsp; <span style="color: #FF8801;">Application for Financing Food</span>
+                        </div> <br>
                         <!--begin::Toolbar-->
                         <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
                             <!--begin::Toolbar container-->
@@ -504,101 +477,150 @@
                                     <!--begin::Title-->
                                     <h1 class="page-heading d-flex align-items-center text-gray-900 fw-bold my-0"
                                         style="font-size: 32px;">
-                                        Account &nbsp;
+                                        Food Financing &nbsp;
+                                        <span class="mb-5"><i class="bi bi-info-circle"
+                                                style="font-size: 15px; color: #04A949; font-weight: bold;"></i></span>
+                                        <br> <br>
                                     </h1>
 
-                                    <!--end::Title-->
-                                    <!--begin::Breadcrumb-->
-                                    <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
-                                        <!--begin::Item-->
-                                        <li class="breadcrumb-item text-muted">
-                                            <a class="text-muted" style="font-size: 14px;">
-                                                Manage your personal information and security.
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <!--end::Breadcrumb-->
                                 </div>
                                 <!--end::Actions-->
+
                             </div>
                             <!--end::Toolbar container-->
                         </div>
                         <!--end::Toolbar-->
                         <!--begin::Content-->
-
                     </div>
+
+                    <div class="py-40 px-5" style="overflow-x: hidden;">
+                        <!--begin::Form-->
+                        <h1 class="page-heading d-flex align-items-center text-gray-900 fw-bold my-0"
+                            style="font-size: 16px;">
+                            &nbsp; &nbsp;Financing Details
+                        </h1> <br> <br>
+                        <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form"
+                            data-kt-redirect-url="authentication/layouts/fancy/sign-in.html" action="#">
+
+                            <div class="row fv-row mb-7">
+
+                                <!--begin::Col-->
+                                <div class="col-xl-6 px-5">
+                                    <label for="example-radio" class="form-check-label">
+                                        <h4 class="px-5">Amount Needed</h4>
+                                    </label>
+                                    <input class="form-control form-control-lg form-control-solid" type="text"
+                                        name="first-name" autocomplete="off"
+                                        data-kt-translate="sign-up-input-first-name" style="border: 1px solid rgb(236, 233, 233);"/>
+                                </div>
+                            </div>
+
+                            <div class="row fv-row mb-7">
+
+                                <!--begin::Col-->
+                                <div class="col-xl-6 px-5">
+                                    <label for="example-radio" class="form-check-label">
+                                        <h4 class="px-5">Purpose of Loan</h4>
+                                    </label>
+                                    <input class="form-control form-control-lg form-control-solid" type="text"
+                                        name="first-name" autocomplete="off"
+                                        data-kt-translate="sign-up-input-first-name" style="border: 1px solid rgb(236, 233, 233);"/>
+                                </div>
+                            </div>
+
+                            <div class="row fv-row mb-7">
+                                <label for="example-radio" class="form-check-label">
+                                    <h4 class="px-5">Repayment Plan</h4>
+                                </label>
+
+
+                                <div class="row flex-column fv-row mb-7">
+
+                                    <div class="col-xl-6 px-5 d-flex align-items-center gap-3 custom-radio">
+                                        <input type="radio" name="example-radio-group"
+                                            style="accent-color: #04A949; margin-left: 10px;"  />
+                                        <label for="example-radio" class="form-check-label fs-25 fw-900"
+                                            style="color: #2E2E2E; font-weight: 400; font-size: 14px;">Short-Term Plan
+                                            (1–3 months, 2% monthly interest).</label>
+                                    </div>
+
+                                    <div class="col-xl-6 px-5 d-flex align-items-center gap-3 custom-radio">
+                                        <input type="radio" name="example-radio-group"
+                                            style="accent-color: #04A949; margin-left: 10px;" />
+                                        <label for="example-radio" class="form-check-label fs-25 fw-900"
+                                            style="color: #2E2E2E; font-weight: 400; font-size: 14px;">Medium-Term Plan
+                                            (3–6 months, 3% monthly interest).</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row fv-row mb-7">
+
+                                <!--begin::Col-->
+                                <div class="col-xl-6 px-5">
+                                    <label for="example-radio" class="form-check-label">
+                                        <h4 class="px-5">Payment Start Date:</h4>
+                                    </label>
+                                    <input class="form-control form-control-lg form-control-solid" type="date"
+                                        placeholder="01/01/2025" name="first-name" autocomplete="off"
+                                        data-kt-translate="sign-up-input-first-name" style="border: 1px solid rgb(236, 233, 233);"/>
+
+                                    <input type="radio" name="example-radio-group"
+                                        style="accent-color: #04A949; margin-left: 10px;" />
+                                    <label for="example-radio" class="form-check-label fs-25 fw-900"
+                                        style="color: #2E2E2E; font-weight: 400; font-size: 14px; margin-left: 10px;">I agree to the terms
+                                        and conditions
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="d-flex flex-stack justify-content-center align-items-center jutify-content-center w-75 flex gap-5 w-20"
+                                style="height: 10vh;">
+                                <!--begin::Submit-->
+
+                                <button id="kt_sign_up_submit" class="btn btn-warning" style="color: #2E2E2E; border: 1px solid grey; background-color: #fff;" data-kt-translate="sign-up-submit">
+                                    <!--begin::Indicator label-->
+                                    <span class="indicator-label">Previous</span>
+                                    <!--end::Indicator label-->
+                                    <!--begin::Indicator progress-->
+                                    <span class="indicator-progress">Please wait... 
+                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                    <!--end::Indicator progress-->
+                                </button> 
+                                <span>
+                                    <button id="kt_sign_up_submit" class="btn btn-warning" style="background-color: #FF8801;" data-kt-translate="sign-up-submit">
+                                    <!--begin::Indicator label-->
+                                    <span class="indicator-label">Submit Application</span>
+                                    <!--end::Indicator label-->
+                                    <!--begin::Indicator progress-->
+                                    <span class="indicator-progress">Please wait... 
+                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                    <!--end::Indicator progress-->
+                                    </button>
+                                </span>
+
+                                <!--end::Submit-->
+                                <!--begin::Social-->
+
+                            </div>
+                            <!--end::Actions-->
+                        </form>
+                        <!--end::Form-->
+                    </div>
+
+
+
+
+
 
                     <!--end::Footer-->
                 </div>
                 <!--end:::Main-->
-
-
-                <div class="container py-5 border">
-                    <div class="profile-header">
-                        <img src="assets/media/avatars/300-3.jpg" alt="Profile Picture">
-                        <div class="status-dot"></div>
-                        <div>
-                            <h5>Rokeeb Abdul</h5>
-                        </div>
-                    </div>
-
-                    <div class="edit-link p-5">
-                        <h6>My Information</h6>
-                        <a href="#" style="font-weight: 900; font-size: 16px;">Edit</a>
-                    </div>
-
-
-                    <div class="info-section">
-                        <form class="p-5 border w-100">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" id="name" class="form-control" value="Rokeeb Abdul" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" id="email" class="form-control" value="rokeeb@gmail.com" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="phone" class="form-control" value="+123 456 7890" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="location" class="form-label">Location</label>
-                                <input type="text" id="location" class="form-control" value="Lagos, Nigeria" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" id="password" class="form-control" value="********" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="info-section">
-                        <h6 class="p-5">Next of Kin Information</h6>
-                        <form class="p-5 border w-100">
-                            <div class="mb-3">
-                                <label for="nok-name" class="form-label">Name of Next of Kin</label>
-                                <input type="text" id="nok-name" class="form-control" value="Rokeeb Abdul" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nok-email" class="form-label">Email Address</label>
-                                <input type="email" id="nok-email" class="form-control" value="rokeeb@gmail.com" style="border: 1px solid rgb(236, 233, 233);"
-                                    disabled>
-                            </div>
-                            <div class="mb-3">
-                                <label for="nok-phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="nok-phone" class="form-control" value="+123 456 7890" disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nok-location" class="form-label">Location</label>
-                                <input type="text" id="nok-location" class="form-control" value="Lagos, Nigeria"
-                                    disabled style="border: 1px solid rgb(236, 233, 233);">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
             </div>
             <!--end::Wrapper-->
         </div>
@@ -606,7 +628,6 @@
     </div>
     <!--end::App-->
 
-    </div>
 
 
 
@@ -618,6 +639,7 @@
             <span class="path2"></span>
         </i>
     </div>
+
 
     <script>
         document.querySelectorAll('.menu-item.menu-accordion .menu-link').forEach(link => {
@@ -636,93 +658,19 @@
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // DataTable Initialization
-            const table = $("#kt_ecommerce_products_table").DataTable({
-                order: [[1, 'asc']],
-                pageLength: 5,
-                dom: "Bfrtip",
-                buttons: [
-                    {
-                        extend: "excel",
-                        text: "Export to Excel",
-                        className: "btn btn-light-primary",
-                    },
-                    {
-                        extend: "csv",
-                        text: "Export to CSV",
-                        className: "btn btn-light-primary",
-                    },
-                ],
-                language: {
-                    searchPlaceholder: "Search...",
-                },
-            });
-
-            // Initialize Select2
-            $("#statusFilter").select2({
-                placeholder: "Select Status",
-                allowClear: true,
-            });
-
-            // Search Box Listener
-            $("#searchBox").on("keyup", function () {
-                table.search(this.value).draw();
-            });
-
-            // Status Filter Listener
-            $("#statusFilter").on("change", function () {
-                const value = $(this).val();
-                if (value === "all" || value === "") {
-                    table.search("").draw();
-                } else {
-                    table.search(value).draw();
-                }
-            });
-
-            // Pagination container
-            table.on("draw", function () {
-                const paginationContainer = $("#paginationContainer");
-                paginationContainer.html(table.page.info());
-            });
-
-            // Export to Excel/CSV Buttons
-            $("#exportExcel").on("click", function () {
-                table.button(".buttons-excel").trigger();
-            });
-
-            $("#exportCSV").on("click", function () {
-                table.button(".buttons-csv").trigger();
-            });
-        });
-
-    </script>
-
-
-    <!-- <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#kt_ecommerce_products_table').DataTable({
                 // Disable automatic table layout calculation
                 autoWidth: false,
                 // Disable DataTables' default behavior of calculating the column widths
                 columnDefs: [{
-                        "width": "100px",
-                        "targets": "_all"
-                    } // Set a fixed width for all columns
+                    "width": "100px",
+                    "targets": "_all"
+                } // Set a fixed width for all columns
                 ]
             });
         });
-    </script> -->
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- DataTables -->
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
-    <!-- Select2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+    </script>
 
 
     <!--begin::Javascript-->
@@ -731,6 +679,10 @@
     <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/js/scripts.bundle.js"></script>
     <!--end::Global Javascript Bundle-->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <!--begin::Vendors Javascript(used for this page only)-->
     <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
